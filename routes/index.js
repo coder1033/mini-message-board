@@ -24,7 +24,7 @@ const messages = [
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Mini Message", messages: messages });
+  res.render("index", { title: "Mini Message", messages: messages, hostname: req.headers.host });
 });
 
 /* Get new page */
