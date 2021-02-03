@@ -16,6 +16,6 @@ html
   body
     nav(id="navbar").navbar.navbar-dark.bg-dark
       div.container
-        a(href="http://localhost:3000/", id="headerlink").navbar-brand.display-1  Mini Message Board
-        a(href="http://localhost:3000/new").navbar-item.nav-link.navbar-right.btn.btn-outline-warning.btn-sm New
+        a(href=`http://${hostname}/`, id="headerlink").navbar-brand.display-1  Mini Message Board
+        a(href=`http://${hostname}/new`).navbar-item.nav-link.navbar-right.btn.btn-outline-warning.btn-sm New
     block content
