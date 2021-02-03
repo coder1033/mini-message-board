@@ -1,12 +1,17 @@
 extends layout
 
 block content
-  h2 Messages
-    sup
-      a(href="http://localhost:3000/new") New  
-  
-  each msg in messages
-    div(style={border: "1px solid black", margin:"5px", padding: "5px 20px"})
-      h3= msg.user
-      small= msg.added
-      h4= msg.text
+  div.container.text-center
+    h2.m-3 Messages
+  div.container.text-center
+    each msg in messages
+      div(
+        class="card-size",
+        style={display:"inline-block"}
+        ).card.border-warning.m-3
+        div.card-header.text-center
+          h5= msg.user
+        div.text-right
+          small.text-muted= msg.added
+        div.card-body
+          p.card-text= msg.text
