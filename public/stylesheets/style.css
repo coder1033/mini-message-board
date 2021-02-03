@@ -1,8 +1,21 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 a {
   color: #00B7FF;
+}
+
+#navbar{
+  border-radius: 0;
+}
+#headerlink{
+  font-size: 30px;
+}
+.card-size{
+  width: 16rem;
+}
+@media(max-width:500px){
+  #headerlink{
+    font-size: 22px;
+  }
+  .card-size{
+    width: 13rem;
+  }
 }
