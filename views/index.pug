@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h2 Messages
+    sup
+      a(href="http://localhost:3000/new") New  
+  
+  each msg in messages
+    div(style={border: "1px solid black", margin:"5px", padding: "5px 20px"})
+      h3= msg.user
+      small= msg.added
+      h4= msg.text
