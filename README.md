@@ -16,3 +16,5 @@ This is the project mentioned in [The Odin Project](https://www.theodinproject.c
    - To start the server run `npm run start`
 
    - To start the server in watch mode run `npm run devstart`
+
+[Live demo to the heroku](https://coder1033-mini-message-board.herokuapp.com/)
